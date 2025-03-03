@@ -20,6 +20,9 @@ namespace bai16_formattext
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             lbllaptrinh.Font = new Font(lbllaptrinh.Font.Name, lbllaptrinh.Font.Size, lbllaptrinh.Font.Style ^ FontStyle.Italic);
+            txtnhapten.Font = new Font(txtnhapten.Font.Name, txtnhapten.Font.Size, txtnhapten.Font.Style ^ FontStyle.Italic);
+            lbllaptrinh.Font = new Font(lbllaptrinh.Font.Name, lbllaptrinh.Font.Size, lbllaptrinh.Font.Style ^ FontStyle.Underline);
+            txtnhapten.Font = new Font(txtnhapten.Font.Name, txtnhapten.Font.Size, txtnhapten.Font.Style ^ FontStyle.Underline);
         }
 
         private void Formattext_Load(object sender, EventArgs e)
@@ -66,6 +69,7 @@ namespace bai16_formattext
         private void chkBold_CheckedChanged(object sender, EventArgs e)
         {
            lbllaptrinh.Font = new Font (lbllaptrinh. Font.Name, lbllaptrinh.Font.Size,lbllaptrinh.Font.Style ^ FontStyle.Bold);
+            txtnhapten.Font = new Font(txtnhapten.Font.Name, txtnhapten.Font.Size, txtnhapten.Font.Style ^ FontStyle.Bold);
         }
     }
 }

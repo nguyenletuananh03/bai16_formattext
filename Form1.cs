@@ -20,7 +20,9 @@ namespace bai16_formattext
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string ten = "nguyễn lê tuấn anh ";
+            lblinfo.Text = "họ và tên thí sinh " + ten + Environment.NewLine;
+            lblinfo.Text += "ngày viết chương trình:" + System.DateTime.Now;
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,6 +35,11 @@ namespace bai16_formattext
             Formattext formatText = new Formattext();
             formatText.MdiParent = this;
             formatText.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
